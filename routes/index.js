@@ -4,10 +4,10 @@ var passport = require('passport');
 
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'prk',
-    password : 'prk',
-    database : 'prk'
+    host     : 'sql12.freemysqlhosting.net',
+    user     : 'sql12194671',
+    password : 'aeTS8bpsub',
+    database : 'sql12194671'
 });
 
 connection.connect();
