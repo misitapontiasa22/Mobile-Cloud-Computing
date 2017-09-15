@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/themes/MobileTheme.min.css" />
+    <link rel="stylesheet" href="/stylesheets/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!--<h1><%= title %></h1>-->
+<!--<p>Welcome to <%= title %></p>-->
+<div data-role="page">
+    <div data-role="header">
+        <h1>Register</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <form data-ajax="false" action="/doRegis" method="post">
+            <input type="text" name="txtUsername" placeholder="username">
+            <input type="text" name="txtEmail" placeholder="email">
+            <input type="password" name="txtPassword" placeholder="password">
+            <fieldset data-role="controlgroup">
+                <legend>Gender</legend>
+                <input name="gender" id="radio-choice-1" value="Male" checked="checked" type="radio">
+                <label for="radio-choice-1">Male</label>
+                <input name="gender" id="radio-choice-2" value="Female" type="radio">
+                <label for="radio-choice-2">Female</label>
+            </fieldset>
+            <input type="submit" name="btnRegis" value="SUBMIT">
+            <input type="reset" name="btnReset" value="RESET">
+        </form>
+    </div>
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div>
+</div>
+</body>
+</html>
